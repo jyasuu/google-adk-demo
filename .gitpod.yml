@@ -7,7 +7,9 @@
 tasks:
   - init: |
         python -m venv .venv
-        pip install google-adk
+        pip install google-adk -q
+        pip install litellm -q
     command: |
         python -m venv .venv
         pip install google-adk
+        pip install litellm -q
